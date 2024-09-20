@@ -2,6 +2,10 @@
 
 ## Getting Started
 
+## I Got UI idea from here ##
+#  https://www.canva.com/p/templates/EAFW2muTrMM-graphic-designer-online-portfolio/
+
+
 
 Here is UI template link:- [text](https://www.canva.com/p/templates/EAFW2muTrMM-graphic-designer-online-portfolio/)
 

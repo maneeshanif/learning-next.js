@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 const Navbar = () => {
   const [isClick, setisClick] = useState(false);
   const toggleNavbar = () => {
@@ -19,24 +20,24 @@ const Navbar = () => {
             </div>
             <div className="hidden md:block">
               <div className="ml-4 flex items-center space-x-5 lg:space-x-20">
-                <a
+                <Link
                   href="/"
                   className="text-white lg:text-3xl  md:text-xl hover:underline decoration-[#2AD87F] hover:text-red-400 hover:text-balance  "
                 >
                   Home
-                </a>
-                <a
-                  href="#About"
+                </Link>
+                <Link
+                  href="/About"
                   className="text-white lg:text-3xl  md:text-xl hover:underline decoration-[#2AD87F] hover:text-red-400 hover:text-balance "
                 >
                   About
-                </a>
-                <a
-                  href="#Contact"
+                </Link>
+                <Link
+                  href="/Contact"
                   className="text-white lg:text-3xl  md:text-xl hover:underline decoration-[#2AD87F] hover:text-red-400 hover:text-balance "
                 >
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
             <div className="md:hidden flrx items-center">
