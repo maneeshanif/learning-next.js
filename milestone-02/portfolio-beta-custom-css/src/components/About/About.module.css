@@ -93,9 +93,8 @@
 .cvbtn {
   height: 4rem;
   width: 12rem;
-
   position: relative;
-  bottom: 70;
+  bottom: 70px;
   left: 13rem;
   border: 3px solid #2ad87f;
   display: flex;
