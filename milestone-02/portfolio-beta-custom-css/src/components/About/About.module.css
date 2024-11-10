@@ -1,0 +1,170 @@
+.container {
+  background-color: #1e242b;
+  height: 100dvh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid white;
+}
+
+.highlightLine {
+  height: 2px;
+  width: 24rem;
+  background-color: #2ad87f;
+  position: absolute;
+  top: 10rem;
+  right: 0;
+}
+
+.aboutImgContainer {
+  height: 30rem;
+  width: 25rem;
+  background-color: #2ad87f;
+  z-index: 50;
+  position: absolute;
+  top: 8rem;
+  left: 10rem;
+
+  /* 'sm:h-[30rem] h-[20rem] w-[18rem] sm:w-[25rem] bg-[#2AD87F] z-50 absolute top-16 sm:top-32 left-16 sm:left-40' */
+}
+
+.actualImg {
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  left: 2.5rem;
+  bottom: 2.5rem;
+  /* " h-[90%]  sm:h-[100%] w-[90%] sm:w-[100%] z-100 absolute  left-8 sm:left-10 bottom-8 sm:bottom-10 " */
+}
+
+.aboutText {
+  height: 24rem;
+  width: 37rem;
+  position: absolute;
+  right: 11rem;
+  /* 'h-80 w-[20rem] sm:h-96 sm:w-[37rem]  absolute sm:top-32 bottom-10 right-10 sm:right-44' */
+}
+
+.heading {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 400;
+  /* 'text-white bold  text-4xl sm:text-[3.5rem]' */
+}
+
+.paragraph {
+  padding-top: 4rem;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+  /* pt-8 sm:pt-16  text-[1rem] sm:text-xl text-white bold' */
+}
+
+.hirebtn {
+  height: 4rem;
+  width: 12rem;
+  background-color: #2ad87f;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  position: relative;
+  color: white;
+  border: 3px solid #2ad87f;
+  display: flex;
+  bottom: 2;
+  justify-content: center;
+  align-items: center;
+  /* ' h-12 sm:h-16  w-28 sm:w-48 bg-[#2AD87F] absolute bottom-6 text-white  text:sm sm:text-xl flex items-center justify-center hover:bg-inherit border-[#2AD87F] border-[3px] hover:text-[#2AD87F] ' */
+}
+.hirebtn a {
+  text-decoration: none;
+  color: white;
+}
+.hirebtn a:hover {
+  color: #2ad87f;
+}
+
+.hirebtn:hover {
+  background-color: inherit;
+}
+
+.cvbtn {
+  height: 4rem;
+  width: 12rem;
+
+  position: relative;
+  bottom: 70;
+  left: 13rem;
+  border: 3px solid #2ad87f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* h-12 sm:h-16  w-28 sm:w-48 border-[#2AD87F] border-[3px] absolute bottom-6  left-36 sm:left-52 text-white text-sm sm:text-xl flex items-center justify-center hover:bg-[#2ad */
+}
+
+.cvbtn button {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: white;
+}
+
+.cvbtn:hover {
+  background-color: #2ad87f;
+}
+
+
+@media (max-width: 640px) {
+    .aboutImgContainer {
+      height: 20rem;
+      width: 18rem;
+      top: 4rem;
+      left: 2rem;
+    }
+  
+    .actualImg {
+      left: 1rem;
+      bottom: 1rem;
+    }
+  
+    .highlightLine {
+      width: 10rem;
+      top: 8rem;
+      right: 0.5rem;
+    }
+  
+    .aboutText {
+      height: auto;
+      width: 100%;
+      position: relative;
+      padding: 1rem;
+      text-align: center;
+      top: 22rem;
+      right: 0;
+    }
+  
+    .heading {
+      font-size: 2rem;
+    }
+  
+    .paragraph {
+      font-size: 1rem;
+      padding-top: 1rem;
+    }
+  
+    .hirebtn,
+    .cvbtn {
+      width: 8rem;
+      margin: 0.5rem auto;
+      position: static;
+    }
+  
+    .cvbtn {
+      left: 0;
+      bottom: 0;
+    }
+  }
