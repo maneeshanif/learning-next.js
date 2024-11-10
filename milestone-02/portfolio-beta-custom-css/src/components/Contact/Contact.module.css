@@ -1,0 +1,121 @@
+.mainContainer {
+  background-color: #1e242b;
+  height: 100dvh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid white;
+  /* "bg-[#1e242b] h-dvh w-full relative flex flex-wrap border-y-white border-[2px]" */
+}
+
+.sideline {
+  height: 2px;
+  width: 24rem;
+  background-color: #2ad87f;
+  position: absolute;
+  right: 0px;
+  top: 8rem;
+  /* h-[2px] w-10 sm:w-96 bg-[#2AD87F] absolute  top-32 right-0 */
+}
+
+.sidebox {
+  height: 24rem;
+  width: 40%;
+  color: white;
+  background-color: #2ad87f;
+  position: absolute;
+  bottom: 0px;
+  /* h-96 w-2/5 text-white bg-[#2AD87F]  absolute bottom-0 */
+}
+
+.formbox {
+  border: 2px solid #2ad87f;
+  backdrop-filter: blur(64px);
+  height: 80%;
+  width: 35%;
+  position: absolute;
+  top: 2.5rem;
+  margin-left: 32%;
+  margin-top: 2.5rem;
+  padding-bottom: 0.625rem;
+  border-radius: 10px;
+  z-index: 30;
+  /* backdrop-blur-3xl border-[#2AD87F] border-[2px] top-10 h-[80%] w-[72%] sm:w-[35%] ml-[14%] sm:ml-[32%] absolute mt-10 pb-2.5 rounded-[10px] */
+}
+
+.heading {
+  color: #2ad87f;
+  text-align: center;
+  font-size: 3.75rem /* 60px */;
+  line-height: 1;
+  /* text-[#2AD87F] text-center text-[40px] sm:text-6xl p-3; */
+}
+
+.forminput {
+  background-color: #e2eaf5;
+  border: 2px solid #2ad87f;
+  font-size: larger;
+  border-radius: 10px;
+  height: 3rem;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  /* className=" bg-[#e2eaf5] w-[70%] text-xl ml-[15%] mb-5 p-4 rounded-[10px]  focus-within:border-[#2AD87F] focus-within:border-[3px]" */
+}
+
+.formbtn {
+  background-color: #2ad87f;
+  border: 2px solid #2ad87f;
+  border-radius: 10px;
+  color: #e2eaf5;
+  height: 3rem;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  font-size: larger;
+  /* " text-[#f7e7df] bg-[#2AD87F]  text-[22px] text-center flex justify-center m-auto px-[34px] py-2.5  hover:border-[#2AD87F] hover:border-[3px] hover:bg-inherit" */
+}
+
+.formbtn:hover {
+  background-color: inherit;
+  color: #e2eaf5;
+}
+
+@media (max-width: 640px) {
+  .sideline {
+    width: 10rem;
+    top: 4rem;
+  }
+
+  .sidebox {
+    width: 45%;
+    height: 24rem;
+    bottom: 0;
+  }
+  .heading {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .formbox {
+    width: 62%;
+    margin-left: 18%;
+  }
+
+  .forminput {
+    height: 3rem;
+    width: 75%;
+    margin-left: 10%;
+    font-size: 1rem;
+  }
+  .formbtn {
+    position: relative;
+    left: 20%;
+    width: 40%;
+    margin-left: 10%;
+    font-size: 1rem;
+  }
+}

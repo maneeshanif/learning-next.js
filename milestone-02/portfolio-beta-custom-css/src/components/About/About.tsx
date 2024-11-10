@@ -22,7 +22,7 @@ const AboutMe = () => {
           <p className={Styles.paragraph}>MY self Mohummad Anees.I am frontend developer from Pakistan.I have expertise in html,css,js,ts and C lang. Currently i am lerning certified cloud computing in which i am focusing on next js nowadays
           </p>
           <div className={Styles.hirebtn}><a href="#Contact">Hire Me</a></div>
-          <div className={Styles.cvbtn}><a href="assets/my-cv.pdf" download="Mohummad_Anees_Cv"><button>Download CV</button></a></div>
+          <div className={Styles.cvbtn}><a href="Assets/mypdf.pdf" download="Mohummad_Anees_Cv"><button>Download CV</button></a></div>
         </div>
      
       </div>

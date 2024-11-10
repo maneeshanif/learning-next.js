@@ -23,7 +23,7 @@ const Home = () => {
           <h1 className={Styles.nameTitle}>I&apos;M Mohummad</h1>
           <h1 className={Styles.nameTitle}>Anees</h1>
           <div className= {Styles.ctaButton}>
-             <a href="#About">Web Developer</a>
+             <a href="/about">Web Developer</a>
            <div className={Styles.arrow}>--&gt;</div>
           </div>
           
