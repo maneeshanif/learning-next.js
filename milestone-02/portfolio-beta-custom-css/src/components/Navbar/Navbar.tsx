@@ -14,9 +14,9 @@ const Navbar = () => {
           <div className={Styles.navinner2}>
             <div className={Styles.logodiv}>
               <div className={Styles.logoinner}>
-                <a href="/" className={Styles.logo}>
+                <Link href="/" className={Styles.logo}>
                   M.Anees
-                </a>
+                </Link>
               </div>
             </div>
             <div className={ Styles.navItems}>
